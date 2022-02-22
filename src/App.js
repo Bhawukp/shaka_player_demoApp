@@ -1,23 +1,20 @@
-import logo from './logo.svg';
+
 import './App.css';
+import ShakaPlayer from 'shaka-player-react';
+import 'shaka-player/dist/controls.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
+       <h1>Demo app</h1>
+       <div className='box'>
+       <div className="container">
+       <ShakaPlayer  autoPlay muted width="250px" src="https://dl8.webmfiles.org/big-buck-bunny_trailer.webm"  /> 
+       </div>
+       </div>
+
+      
     </div>
   );
 }
